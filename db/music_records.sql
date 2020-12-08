@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS artists;
 DROP TABLE IF EXISTS albums;
+DROP TABLE IF EXISTS artists;
 
 CREATE TABLE artists (
     id SERIAL PRIMARY KEY,
@@ -12,3 +12,6 @@ CREATE TABLE albums (
     genre VARCHAR(255),
     artist_id INT REFERENCES artists(id)
 );
+
+SELECT * FROM albums;
+SELECT * FROM artists;
